@@ -4,10 +4,10 @@ This is a repository for the radio light curve program used in [Sarbadhicary et 
 
 The code is a simply Python script written with Python 2.7, although it should work with higher versions. 
 
-###Installation
+### Installation
 You can do the following :-
 1. Clone this repository using `git clone` into your computer
 2. Copy paste the `s17lc.py` into a blank `.py` file directly in your computer and use it accordingly.
 
-###Usage
+### Usage
 I have included a Jupyter notebook to show how to generate radius, velocity, and light curves with the code. 
