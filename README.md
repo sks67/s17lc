@@ -5,7 +5,7 @@ The code is a simply Python script written with Python 2.7, although it should w
 
 ### Installation
 You can do the following :-
-1. Clone this repository using `git clone` into your computer
+1. If you have [git](https://git-scm.com/) installed, you can directly clone this repository using `git clone https://github.com/sks67/s17lc.git` into your computer
 2. Copy paste the `s17lc.py` into a blank `.py` file directly in your computer and use it accordingly.
 
 ### Usage
