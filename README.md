@@ -1,5 +1,4 @@
-# S17_LightCurve
-
+# s17lc
 This is a repository for the radio light curve program used in [Sarbadhicary et al 2017](http://adsabs.harvard.edu/abs/2017MNRAS.464.2326S). **Please cite the paper if you use the code for your project**. 
 
 The code is a simply Python script written with Python 2.7, although it should work with higher versions. 
