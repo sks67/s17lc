@@ -1,6 +1,6 @@
 # s17lc
 This is a repository for the radio light curve program used in [Sarbadhicary et al 2017](http://adsabs.harvard.edu/abs/2017MNRAS.464.2326S). **Please cite the paper if you use the code for your project**. Here is the BibteX citation:
-`@ARTICLE{2017MNRAS.464.2326S,
+```@ARTICLE{2017MNRAS.464.2326S,
    author = {{Sarbadhicary}, S.~K. and {Badenes}, C. and {Chomiuk}, L. and 
 	{Caprioli}, D. and {Huizenga}, D.},
     title = "{Supernova remnants in the Local Group - I. A model for the radio luminosity function and visibility times of supernova remnants}",
@@ -17,7 +17,7 @@ archivePrefix = "arXiv",
    adsurl = {http://adsabs.harvard.edu/abs/2017MNRAS.464.2326S},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
-`
+```
 
 The code is a simply Python script written with Python 2.7, although it should work with higher versions. 
 
