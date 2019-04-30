@@ -29,7 +29,7 @@ You can do the following :-
 ### Description
 The program `s17lc.py` is the coded up version of the equations A1-A11 in the paper. There are two main modules :-
 
-1. `radius_velocity()`: This provides the radius and velocity of the supernova remnant for a given age, based on the dimensional variables and self similar solutions in [Truelove & Mckee 1999](http://adsabs.harvard.edu/abs/1999ApJS..120..299T). I assume $$$\rho \sim v^{-10}$$$ for Type Ia and $$$\rho \sim v^{-12}$$$ for core-collapse SNe, as explained in Sarbadhicary et al (2017).
+1. `radius_velocity()`: This provides the radius and velocity of the supernova remnant for a given age, based on the dimensional variables and self similar solutions in [Truelove & Mckee 1999](http://adsabs.harvard.edu/abs/1999ApJS..120..299T). I assume $\rho \sim v^{-10}$ for Type Ia and $\rho \sim v^{-12}$ for core-collapse SNe, as explained in Sarbadhicary et al (2017).
 
 2. `luminosity()`: This provides the luminosity of the supernova remnant, given the radius, velocity, density and other parameters. 
 
