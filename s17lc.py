@@ -112,6 +112,11 @@ def luminosity(rs, vs, n0, epse, p, nu):
     
     L1 = 4.0*(3.14**2)*(rs_cgs**2)*(B**(-0.5))*(c5/c6) #Breaking Eq A10 into 3 parts - L1, L2, L3 - for simplicity
     L2 = 1 - np.exp(-(nu/nu1)**(-(p+4)/2.))
+
+    #This is a short step I am adding because the above equation for L2 runs into numerical errors
+    #for nu>>nu1 (i.e. much later in the SNR age). This is particularly apparent for very low densities (e.g. n0<0.01)
+    #To avoid this for now, I enforce the approximation: e^-x = 1 - x (for x<<1). May revisit this at some point
+    L2[nu>20.*nu1] = ((nu/nu1)**(-1.0*(p+4)/2.))[nu>20.*nu1]
     L3 = (nu/(2.*c1))**(5./2.)
 
     return L1*L2*L3 #Eq A10
