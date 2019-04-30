@@ -19,7 +19,7 @@ archivePrefix = "arXiv",
 }
 ```
 
-The code is a simply Python script written with Python 2.7, although it should work with higher versions. 
+The code is written with Python 2.7, although it should work with Python 3+. It should only require `numpy` and `matplotlib` installed.
 
 ### Installation
 You can do the following :-
@@ -27,7 +27,13 @@ You can do the following :-
 2. Copy paste the `s17lc.py` into a blank `.py` file directly in your computer and use it accordingly.
 
 ### Description
-The program `s17lc.py` is the coded up version of the equations A1-A11 in the paper. 
+The program `s17lc.py` is the coded up version of the equations A1-A11 in the paper. There are two main modules :-
+
+1. `radius_velocity()`: This provides the radius and velocity of the supernova remnant for a given age, based on the dimensional variables and self similar solutions in [Truelove & Mckee 1999](http://adsabs.harvard.edu/abs/1999ApJS..120..299T). I assume $$$\rho \sim v^{-10}$$$ for Type Ia and $$$\rho \sim v^{-12}$$$ for core-collapse SNe, as explained in Sarbadhicary et al (2017).
+
+2. `luminosity()`: This provides the luminosity of the supernova remnant, given the radius, velocity, density and other parameters. 
+
+You can use these to create light curves or estimate values at a particular age.
 
 ### Usage
 I have included a Jupyter notebook, `test_s17lc.ipynb` to show how to generate radius, velocity, and light curves with the code. 
