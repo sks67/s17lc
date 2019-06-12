@@ -53,7 +53,7 @@ def radius_velocity(t, n0, mej, e51, sntype='cc'):
     return (rs, vs)
 
     
-def luminosity(rs, vs, n0, epse, p, nu):
+def luminosity(rs, vs, n0, epse, p, nu, b0ref=9.0):
     """
     Luminosity of SNR, given radius, velocity and other parameters
 
@@ -70,7 +70,8 @@ def luminosity(rs, vs, n0, epse, p, nu):
     n0: ISM density (in atoms/cc)
     epse: electron acceleration efficiency 
     p: electron spectral index (stay within p=2.2-2.5)
-    nu: observing frequency (in GHz)
+    nu: observing frequency (in Hz)
+    b0ref: magnetic field at density n0=1 (in uG)
 
     """
     #~~~~~~ Constants ~~~~~~~~~~~~~~~#
@@ -95,7 +96,7 @@ def luminosity(rs, vs, n0, epse, p, nu):
     N_0 = (p-2.)*epse*rho0*(vs_cgs**2)*(Em**(p-2))
 
     #~~~~~~ Magnetic Field Stuff~~~~~~~~~~~~~~~#
-    B0 = 9.0e-6*n0**0.47 #Eq A4 #Note for SKS: Correct this in the paper
+    B0 = (b0ref*1.0e-6)*n0**0.47 #Eq A4 #Note for SKS: Correct this in the paper
     vA = B0/np.sqrt(4.*3.14*rho0) #Alfven Velocity term (Sec A2, 2nd para)
     MA = vs_cgs/vA #Alfven Mach Number
     
