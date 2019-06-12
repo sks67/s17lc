@@ -35,3 +35,7 @@ The program `s17lc.py` is the coded up version of the equations A1-A11 in the pa
 
 ### Usage
 You can use these to create light curves or estimate values at a particular age. I have included a Jupyter notebook, `test_s17lc.ipynb` to show how to generate radius, velocity, and light curves with the code. 
+
+### Miscellaneous Notes
+
+The constants c1, c5, and c6 have a small dependence on the spectral index. I'll update this in the next iteration. 

@@ -18,10 +18,10 @@ def radius_velocity(t, n0, mej, e51, sntype='cc'):
     Parameters:
     ----------
 
-    t : age of SNR (in years)
-    n0 : density (atoms/cc)
-    e51 : energy (in units of 10^51 ergs)
-    mej : ejecta mass (in units of Msun)
+    t : [float, list, ndarray] age of SNR (in years)
+    n0 : [float] density (atoms/cc)
+    e51 : [float] energy (in units of 10^51 ergs)
+    mej : [float] ejecta mass (in units of Msun)
     sntype : ['ia' or 'cc']
     """
 
@@ -65,19 +65,19 @@ def luminosity(rs, vs, n0, epse, p, nu, b0ref=9.0):
     Parameters:
     ----------
 
-    rs: shock radius (in pc)
-    vs: shock velocity (in km/s)
-    n0: ISM density (in atoms/cc)
-    epse: electron acceleration efficiency 
-    p: electron spectral index (stay within p=2.2-2.5)
-    nu: observing frequency (in Hz)
-    b0ref: magnetic field at density n0=1 (in uG)
+    rs: [ndarray] shock radius (in pc)
+    vs: [ndarray] shock velocity (in km/s)
+    n0: [float] ISM density (in atoms/cc)
+    epse: [float] electron acceleration efficiency 
+    p: [float] electron spectral index (stay within p=2.2-2.5)
+    nu: [float] observing frequency (in Hz)
+    b0ref: [float] magnetic field at density n0=1 (in uG)
 
     """
     #~~~~~~ Constants ~~~~~~~~~~~~~~~#
     ef = 0.38  #Emission filling factor
     c1 = 6.27e18 #Pacholyzyk (1980) constants. Note that these depend on p.
-    c5 = 9.68e-24 #Note for SKS: Correction in paper
+    c5 = 9.68e-24 
     c6 = 8.1e-41
     mu = 1.4 
     mp = 1.67e-24 #g
