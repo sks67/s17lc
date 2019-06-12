@@ -18,6 +18,7 @@ archivePrefix = "arXiv",
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
+Please also check the Erratum to the Paper: [Sarbadhicary et al (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.tmp.1400S/abstract) for corrections to some typographical errors in the paper.
 
 The code is written with Python 2.7, although it should work with Python 3+. It should only require `numpy` and `matplotlib` installed.
 
