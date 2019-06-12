@@ -1,7 +1,14 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #
-# Light curve from paper. This is to make sure all the equations
-# as they appear in the paper are consistent with my program.
+# Supplementary Python Program to calculate radio light curves
+# of supernova remnants from ejecta-dominated through Sedov-Taylor
+# stages.
+#
+# Paper: Sarbadhicary et al (2017), MNRAS, 464, 2326
+# Erratum to Paper: https://doi.org/10.1093/mnras/stz1490
+#
+# Creators: S. Sarbadhicary, L. Chomiuk (MSU)
+# Date: June 12, 2019
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
