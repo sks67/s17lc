@@ -18,9 +18,6 @@ archivePrefix = "arXiv",
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
-Please also check the Erratum to the Paper: [Sarbadhicary et al (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.tmp.1400S/abstract) for corrections to some typographical errors in the paper.
-
-The code is written with Python 2.7, although it should work with Python 3+. It should only require `numpy` and `matplotlib` installed.
 
 ### Installation
 You can do the following :-
@@ -38,5 +35,12 @@ The program `s17lc.py` is the coded up version of the equations A1-A11 in the pa
 You can use these to create light curves or estimate values at a particular age. I have included a Jupyter notebook, `test_s17lc.ipynb` to show how to generate radius, velocity, and light curves with the code. 
 
 ### Miscellaneous Notes
+The code is still being developed, so please periodically check back at the Github page. 
+
+Please also check the Erratum to the Paper: [Sarbadhicary et al (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.tmp.1400S/abstract) for corrections to some typographical errors in the paper.
+
+The code is written with Python 2.7, although it should work with Python 3+. It should only require `numpy` and `matplotlib` installed.
 
 The constants c1, c5, and c6 have a small dependence on the spectral index. I'll update this in the next iteration. 
+
+
